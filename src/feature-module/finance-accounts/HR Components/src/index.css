@@ -1,0 +1,64 @@
+
+.product-slider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.slider-wrapper {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+.product {
+    flex: 0 0 33.33%;
+    padding: 15px;
+    text-align: center;
+}
+.product img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.carousel-control-prev, .carousel-control-next {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+.carousel-control-prev {
+    left: -15px;
+}
+.carousel-control-next {
+    right: -15px;
+}
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: darkgray;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+}
+.slider-indicators {
+    text-align: center;
+    margin-top: 10px;
+}
+.slider-indicators button {
+    width: 12px;
+    height: 12px;
+    margin: 0 5px;
+    border-radius: 50%;
+    background-color: #ddd;
+    border: none;
+    cursor: pointer;
+}
+.slider-indicators button.active {
+    background-color: darkgray;
+}
+.table td{
+    border-bottom-width: 0px;
+}
+@media screen and (min-width:300px) and (max-width:720px) {
+    table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+}
